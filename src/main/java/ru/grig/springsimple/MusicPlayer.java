@@ -12,7 +12,7 @@ public class MusicPlayer {
         this.classicalMusic = classicalMusic;
         this.rockMusic = rockMusic;
     }
-
+//
     public String  playMusic(){
         return "Playing: "+ classicalMusic.getSong();
     }
