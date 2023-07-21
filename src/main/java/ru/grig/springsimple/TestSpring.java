@@ -1,7 +1,7 @@
 package ru.grig.springsimple;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import org.springframework.core.io.ClassPathResource;
+//import org.springframework.core.io.ClassPathResource;
 
 public class TestSpring {
     public static void main(String[] args) {
@@ -13,7 +13,9 @@ public class TestSpring {
 
         boolean comparison = musicPlayer1==musicPlayer2;
 
-        //System.out.println(comparison);
+        System.out.println(comparison);
+        System.out.println(musicPlayer1);
+        System.out.println(musicPlayer2);
 
         context.close();
     }
