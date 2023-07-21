@@ -15,6 +15,7 @@ public class TestSpring {
 
         System.out.println(comparison);
         System.out.println(musicPlayer1);
+        System.out.println(musicPlayer2);
         context.close();
     }
 }
