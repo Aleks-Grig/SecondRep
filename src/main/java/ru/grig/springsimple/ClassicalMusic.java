@@ -1,12 +1,20 @@
 package ru.grig.springsimple;
 
-public class ClassicalMusic implements Music{
-    public void doMyInit(){
+public class ClassicalMusic implements Music {
+    private ClassicalMusic() {}
+
+    public static ClassicalMusic getClassicalMusic(){
+        return new ClassicalMusic();
+    }
+
+    public void doMyInit() {
         System.out.println("Doing my initialization");
     }
-    public void doMyDestroy(){
+
+    public void doMyDestroy() {
         System.out.println("Doing my destroy");
     }
+
     @Override
     public String getSong() {
         return "Hungarian Rhapsody";
